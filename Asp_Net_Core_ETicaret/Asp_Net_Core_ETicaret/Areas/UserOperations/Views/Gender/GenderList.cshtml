@@ -1,0 +1,29 @@
+﻿@model IEnumerable<EntityLayer.Concrete.GenderTable>
+@{
+	ViewData["Title"] = "Gender List";
+	Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+	<div class="col-4 offset-4">
+		<h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model)
+		{
+			<div class="col-md-6 col-lg-6 mb-5">
+				<br>
+				<br>
+				<a href="/UserOperations/Category/CategoryListByID/@item.GenderID" class="btn btn-dark read-m">
+					<img class="img-thumbnail-center rounded" src="@item.GenderImages" style="height:400px; width:350px; object-fit:cover;" />
+				</a>
+				<br>
+				<br>
+				<h4>@item.Gender</h4>
+			</div>
+		}
+	</div>
+</div>

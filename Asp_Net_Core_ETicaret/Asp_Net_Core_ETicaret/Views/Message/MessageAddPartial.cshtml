@@ -1,0 +1,37 @@
+﻿<section class="page-section" id="contact" style="background-color:white;">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form action="/Message/MessageAddPartial/" method="post">
+
+                    <input class="form-control" type="text" name="UserAdminName" placeholder="Name Surname" required="">
+                    <br />
+                    <input class="form-control" type="text" name="Email" placeholder="E-Mail" required="">
+                    <br />
+                    <input class="form-control" type="text" name="MessageTitle" placeholder="Title" required="">
+                    <br />
+                    <textarea class="form-control" name="MessageText" placeholder="Message" required="" rows="8"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-info submit text-white"><i class="fas fa-save"></i>  <b>Submit</b></button><br /><br /><a href="/UserOperations/Message/MessageList" class="btn btn-danger text-white"><i class="fas fa-plus"></i>  <b>Message List</b></a>
+                    <br />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

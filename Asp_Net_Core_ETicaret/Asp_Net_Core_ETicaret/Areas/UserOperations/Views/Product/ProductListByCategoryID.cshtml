@@ -1,0 +1,52 @@
+﻿@model IEnumerable<EntityLayer.Concrete.ProductTable>
+@{
+	ViewData["Title"] = "Product List";
+	Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+	<div class="col-4 offset-4">
+		<h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model)
+		{
+			<div class="col-md-6 col-lg-4 mb-5">
+				<br>
+				<br>
+				<div>
+					<div class="card-body">
+						<a href="/UserOperations/Product/SelectListByProduct/@item.ProductID" class="btn btn-dark read-m">
+							<img src="~/ProductImg/@item.ProductImages" class="img-thumbnail-center rounded" style="height:300px; width:250px; object-fit:cover">
+						</a>
+						<br>
+						<br>
+						<h4>@item.ProductName</h4>
+						<h4>@item.ProductTitle</h4>
+						<h4><b>@item.ProductPrice TL</b></h4>
+					</div>
+					
+					<div class="row">
+						<div class="col-md">
+							<a href="/UserOperations/Product/SelectListByProduct/@item.ProductID" class="btn btn-dark read-m">
+								<i class="fas fa-pencil-alt"></i>  <b>Detail</b>
+							</a>
+						</div>
+						<div class="col-md">
+							<a href="/UserOperations/Basket/BasketList/@item.ProductID" class="btn btn-info text-white read-m">
+								<i class="fas fa-plus"></i>  <b>Basket</b>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>
+
+
+
+

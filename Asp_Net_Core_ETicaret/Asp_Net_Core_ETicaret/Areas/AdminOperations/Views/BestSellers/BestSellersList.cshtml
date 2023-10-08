@@ -1,0 +1,70 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.BestSellersTable>
+@{
+    ViewData["Title"] = "Best Sellers List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+<br />
+
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-dark">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Images
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <a href="/AdminOperations/BestSellers/BestSellersAdd" class="btn btn-info text-white"><i class="fas fa-plus"></i>  <b>New Best Sellers Add</b></a>
+                        <br />
+                        <br />
+                        <div class="row">
+                        @foreach (var item in Model)
+                        {
+                                <div class="col-sm-3">
+                                    <a href="~/BestSellersImg/@item.BestSellersImages" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery" style="object-fit:cover;">
+                                        <img src="~/BestSellersImg/@item.BestSellersImages" style="height:250px; width:170px;" class="img-thumbnail-center rounded" />
+                                    </a><br><br>
+
+                                    <a href="/AdminOperations/BestSellers/BestSellersEdit/@item.BestSellersID" class="btn btn-warning text-white"><i class="fas fa-pencil-alt"></i>  <b>Edit</b></a>
+                                    <a href="/AdminOperations/BestSellers/BestSellersDelete/@item.BestSellersID" class="btn btn-danger text-white"><i class="fas fa-trash"></i>  <b>Delete</b></a>
+                                </div>
+                        }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    @Html.PagedListPager((IPagedList)Model,page=>Url.Action("BestSellersList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+    {
+        LiElementClasses=new List<string>
+        {"page-link"}
+    })
+    <br />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.MessageTable>
+@{
+    ViewData["Title"] = "Message List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <a href="#" class="btn btn-primary btn-block mb-3">Compose</a>
+        @await Component.InvokeAsync("Message")
+    </div>
+    <!-- /.col -->
+    <div class="col-md-9">
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">All Message</h3>
+                <div class="card-tools">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search Mail">
+                        <div class="input-group-append">
+                            <div class="btn btn-primary">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-tools -->
+            </div>
+            <div class="table-responsive mailbox-messages">
+                <table class="table table-hover">
+                    @foreach (var item in Model)
+                    {
+                        <tbody>
+                            <tr>
+
+                                <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                <td class="mailbox-name"><a href="/Message/MessageDetails/@item.MessageID">@item.UserAdminName</a></td>
+                                <td class="mailbox-subject">
+                                    <b>@item.Email</b> - <a href="/Message/MessageDetails/@item.MessageID" style="color:brown;"><b>@item.MessageTitle</b></a>
+                                </td>
+                                <td class="mailbox-attachment"></td>
+                                <td class="mailbox-date">@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</td>
+                                <td><a href="/Message/MessageDelete/@item.MessageID" class="btn btn-danger text-white"><i class="far fa-trash-alt"></i></a></td>
+                                <td><a href="/Message/MessageEdit/@item.MessageID" class="btn btn-warning text-white"><i class="fas fa-pencil-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+                <!-- /.table -->
+            </div>
+            <!-- /.mail-box-messages -->
+        </div>
+        @Html.PagedListPager((IPagedList)Model,page=>Url.Action("MessageList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            LiElementClasses=new List<string>
+            {"page-link"}
+        })
+    </div>
+</div>
+
+
+

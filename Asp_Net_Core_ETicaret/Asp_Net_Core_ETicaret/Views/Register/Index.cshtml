@@ -1,0 +1,54 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LoginRegisterLayout.cshtml";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center mb-5">
+        <h1 class="heading-section">REGISTER</h1>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+        <div class="login-wrap p-0">
+            <h6 class="mb-4 text-center">Welcome to E-Commerce Boutique Page. Please Register First....</h6>
+            <form method="post" class="login-form">
+                <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+                <div class="form-grop mb-3">
+                    <label class="form-label text-white"><i class="fas fa-user"></i>  <b>Name Surname</b></label>
+                    <input class="form-control" type="text" asp-for="NameSurname" placeholder="johndoe" required />
+                    <span asp-validation-for="NameSurname" class="text-black small"></span>
+                </div>
+
+
+                <div class="form-grop mb-3">
+                    <label class="form-label text-white"><i class="fas fa-key"></i>  <b>Password</b></label>
+                    <input class="form-control" type="password" asp-for="Password" placeholder="P@ssW0rd!" />
+                    <span asp-validation-for="Password" class="text-black small"></span>
+                </div>
+
+
+                <div class="form-grop mb-3">
+                    <label class="form-label text-white"><i class="fas fa-key"></i>  <b>RePassword</b></label>
+                    <input class="form-control" type="password" asp-for="RePassword" placeholder="P@ssW0rd!" />
+                    <span asp-validation-for="RePassword" class="text-black small"></span>
+                </div>
+
+
+                <div class="form-grop mb-3 d-grid">
+                    <button type="submit" class="form-control btn btn-primary submit px-3"><b>@ViewData["Title"]</b>  <i class="fas fa-sign-in-alt"></i></button>
+                    <div class="w-100 text-center mt-4 text">
+                        <p class="mb-0">Turn Back</p>
+                        <a href="/Login/Index">Login  <i class="fas fa-sign-out-alt"></i></a>
+                        <br />
+                        <a href="/Home/Index">
+                            Back to Home Page  <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+

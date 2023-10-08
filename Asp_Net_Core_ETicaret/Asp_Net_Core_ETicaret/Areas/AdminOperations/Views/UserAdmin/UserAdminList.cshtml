@@ -1,0 +1,73 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.UserAdminTable>
+@{
+    ViewData["Title"] = "User Admin List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+
+<br />
+<br />
+
+
+<div class="card card-solid">
+    
+    <div class="card-body pb-0">
+        <div class="row d-flex align-items-stretch">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                    <div class="card bg-light">
+                        <div class="card-header text-muted border-bottom-0">
+                            @item.Role
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="lead"><b>@item.NameSurname</b></h2>
+                                    <p class="text-muted text-sm"><b>Gender: </b> @item.Gender </p>
+                                    <p class="text-muted text-sm"><b>Create Date: </b> @item.CreateDate </p>
+                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span>@item.Address</li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <img src="~/ProfileImg/@item.ProfileImages" alt="" class="img-circle img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-right">
+                                <a href="/AdminOperations/UserAdmin/UserAdminDelete/@item.ID" class="btn btn-danger text-white">
+                                    <i class="fas fa-trash"></i> <b>Delete</b>
+                                </a>
+                                <a href="/AdminOperations/UserAdmin/UserAdminEdit/@item.ID" class="btn btn-warning text-white">
+                                    <i class="fas fa-user"></i> <b>Edit</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        @Html.PagedListPager((IPagedList)Model,page=>Url.Action("UserAdminList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            LiElementClasses=new List<string>
+            {"page-link"}
+        })
+        <a href="/AdminOperations/UserAdmin/UserAdminAdd" class="btn btn-info text-white"><i class="fas fa-plus"></i>  <b>New User Admin Add</b></a>   
+        <a href="/AdminOperations/UserAdminExcel/UserAdminExcelCreate" class="btn btn-secondary text-white"><i class="fas fa-save"></i>  <b>Create Excel</b></a>
+        <br />
+        <br />
+    </div>
+</div>
+
+<!-- /.content -->

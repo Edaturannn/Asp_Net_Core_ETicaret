@@ -1,0 +1,48 @@
+﻿@model EntityLayer.Concrete.CommentTable
+@{
+    ViewData["Title"] = "Comment Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 offset-4">
+        @using (Html.BeginForm("CommentEdit", "Comment", FormMethod.Post))
+        {
+            @Html.HiddenFor(x=>x.CommentID,new{@class="form-control"})
+            //Guid ID Güncellenmeyecek
+            <br />
+
+            <b>Create Date</b>
+            @Html.TextBoxFor(x=>x.CommentCreateDate,new{@class="form-control"})
+            <br />
+
+            <b>Product Name</b>
+            @Html.DropDownListFor(x=>x.ProductID,(List<SelectListItem>)ViewBag.pv,new{@class="form-control"})
+            <br />
+
+            <b>Name Surname</b>
+            @Html.DropDownListFor(x=>x.ID,(List<SelectListItem>)ViewBag.uv,new{@class="form-control"})
+            <br />
+
+            <b>Comment Message</b>
+            @Html.TextAreaFor(x=>x.CommentMessage,new{@class="form-control",@rows="4"})
+            <br />
+
+
+            <div class="form-grop mb-3 d-grid">
+                <button class="btn btn-info text-white d-block"><b>@ViewData["Title"]</b></button>
+                <a href="/AdminOperations/Comment/CommentList" class="btn btn-danger text-white"><b>Cancel</b></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+

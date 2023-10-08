@@ -1,0 +1,31 @@
+﻿<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio" style="background-color:white;">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+            Best Sellers
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            
+            @await Component.InvokeAsync("UserBestSellers")
+
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto">
+                    <img class="img-fluid" src="~/img/Weather.png" style="height:200px;" />
+                    <br />
+                    <br />
+                    <h4 style="color:black;">Istanbul Weather</h4>
+                    <h6 style="color:black;">@ViewBag.V1 ' C</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

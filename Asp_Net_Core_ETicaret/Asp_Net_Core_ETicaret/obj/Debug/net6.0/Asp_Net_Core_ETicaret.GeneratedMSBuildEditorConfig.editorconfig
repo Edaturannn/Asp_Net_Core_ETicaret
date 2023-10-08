@@ -1,0 +1,285 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Asp_Net_Core_ETicaret
+build_property.RootNamespace = Asp_Net_Core_ETicaret
+build_property.ProjectDir = C:\Users\Eda\Desktop\Asp_Net_Core_Mvc_E-Ticaret_Website\Asp_Net_Core_ETicaret\Asp_Net_Core_ETicaret\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Eda\Desktop\Asp_Net_Core_Mvc_E-Ticaret_Website\Asp_Net_Core_ETicaret\Asp_Net_Core_ETicaret
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/BestSellers/BestSellersAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXEJlc3RTZWxsZXJzXEJlc3RTZWxsZXJzQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/BestSellers/BestSellersEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXEJlc3RTZWxsZXJzXEJlc3RTZWxsZXJzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/BestSellers/BestSellersList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXEJlc3RTZWxsZXJzXEJlc3RTZWxsZXJzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Cargo/CargoAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENhcmdvXENhcmdvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Cargo/CargoList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENhcmdvXENhcmdvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Category/CategoryAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENhdGVnb3J5XENhdGVnb3J5QWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Category/CategoryEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENhdGVnb3J5XENhdGVnb3J5RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Category/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENhdGVnb3J5XENhdGVnb3J5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Comment/CommentEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENvbW1lbnRcQ29tbWVudEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Comment/CommentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXENvbW1lbnRcQ29tbWVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/MyProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXE15UHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Order/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXE9yZGVyXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Order/OrderAllList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXE9yZGVyXE9yZGVyQWxsTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Product/ProductAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFByb2R1Y3RcUHJvZHVjdEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Product/ProductEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFByb2R1Y3RcUHJvZHVjdEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFByb2R1Y3RcUHJvZHVjdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/UserAdmin/UserAdminAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFVzZXJBZG1pblxVc2VyQWRtaW5BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/UserAdmin/UserAdminEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFVzZXJBZG1pblxVc2VyQWRtaW5FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/AdminOperations/Views/UserAdmin/UserAdminList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5PcGVyYXRpb25zXFZpZXdzXFVzZXJBZG1pblxVc2VyQWRtaW5MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/MyProfileOperations/Views/MyProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXlQcm9maWxlT3BlcmF0aW9uc1xWaWV3c1xNeVByb2ZpbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Basket/BasketAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQmFza2V0XEJhc2tldEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Basket/BasketList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQmFza2V0XEJhc2tldExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Basket/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQmFza2V0XE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Category/CategoryListByID.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0QnlJRC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Comment/Comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQ29tbWVudFxDb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Comment/CommentLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQ29tbWVudFxDb21tZW50TGVhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Comment/CommentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcQ29tbWVudFxDb21tZW50TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Gender/GenderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcR2VuZGVyXEdlbmRlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Message/MessageList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcTWVzc2FnZVxNZXNzYWdlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/MyProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcTXlQcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Order/MyOrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcT3JkZXJcTXlPcmRlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Product/ProductListByCategoryID.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdEJ5Q2F0ZWdvcnlJRC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Areas/UserOperations/Views/Product/SelectListByProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlck9wZXJhdGlvbnNcVmlld3NcUHJvZHVjdFxTZWxlY3RMaXN0QnlQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Admin/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Message/MessageAddPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlQWRkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Message/MessageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Message/MessageEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Message/MessageList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/AdminStatistics2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5TdGF0aXN0aWNzMlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/AdminStatistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5TdGF0aXN0aWNzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/HomeAbout/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZUFib3V0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/HomeGallery/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZUdhbGxlcnlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/HomeNavbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZU5hdmJhclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/HomeProject/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVByb2plY3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/HomeUnderside/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9tZVVuZGVyc2lkZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/Message/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserAbout/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckFib3V0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserBestSellers/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckJlc3RTZWxsZXJzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserFooter/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckZvb3RlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserHeader/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckhlYWRlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserIframe/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlcklmcmFtZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Components/UserPortfolio/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlclBvcnRmb2xpb1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_AdminNavbarEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdmJhckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_LoginRegisterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblJlZ2lzdGVyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_UserNavbarEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTmF2YmFyRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/User/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eda/Desktop/Asp_Net_Core_Mvc_E-Ticaret_Website/Asp_Net_Core_ETicaret/Asp_Net_Core_ETicaret/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-znhzoebe8e

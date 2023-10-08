@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Asp_Net_Core_ETicaret.props" />
+</Project>

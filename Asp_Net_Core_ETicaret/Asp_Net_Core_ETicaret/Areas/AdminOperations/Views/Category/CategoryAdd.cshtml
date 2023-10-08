@@ -1,0 +1,53 @@
+﻿@model EntityLayer.Concrete.CategoryTable
+@{
+    ViewData["Title"] = "Category Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 offset-4">
+        <form method="post" enctype="multipart/form-data">
+        @using (Html.BeginForm("CategoryAdd", "Category", FormMethod.Post))
+        {
+            @Html.HiddenFor(x=>x.CategoryID,new{@class="form-control"})
+            //Guid ID Güncellenmeyecek
+            <br />
+
+            <b>Name</b>
+            @Html.TextBoxFor(x=>x.CategoryName,new{@class="form-control"})
+            <br />
+
+            <b>Images</b>
+            <input name="file" type="file" class="form-control" accept=".jpg"/>
+            <br />
+            
+
+            <b>Stok</b>
+                <input type="number" name="CategoryStok" value="0" max="2000" min="0" class="form-control" />
+            <br />
+
+            <b>Gender</b>
+            @Html.DropDownListFor(x=>x.GenderID,(List<SelectListItem>)ViewBag.gv,new{@class="form-control"})
+            <br />
+
+            <div class="form-grop mb-3 d-grid">
+                <button class="btn btn-info text-white d-block"><i class="fas fa-plus"></i>  <b>@ViewData["Title"]</b></button>
+                <a href="/AdminOperations/Category/CategoryList" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i>  <b>Cancel</b></a>
+            </div>
+        }
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+

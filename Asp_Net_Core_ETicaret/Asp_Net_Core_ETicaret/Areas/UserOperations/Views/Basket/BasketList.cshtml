@@ -1,0 +1,51 @@
+﻿@using EntityLayer.Concrete
+@model List<ProductTable>
+@{
+    ViewData["Title"] = "Basket List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<br />
+<div class="container">
+    <br />
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th>Product Images</th>
+                <th>Product Name</th>
+                <th>Product Title</th>
+                <th>Product Price</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="~/ProductImg/@item.ProductImages" class="img-thumbnail-center rounded" style="height:90px; width:70px;"></td>
+                    <th>@item.ProductName</th>
+                    <td>@item.ProductTitle</td>
+                    <td><b>@item.ProductPrice TL</b></td>
+                    <td>
+                        <a href="/UserOperations/Product/SelectListByProduct/@item.ProductID" class="btn btn-danger text-white">
+                            <i class="fas fa-trash">
+                            </i>
+                            <b>Delete</b>
+                        </a>
+                    </td>
+                </tr>
+                <a href="/UserOperations/Basket/BasketAdd/@item.ProductID" class="btn btn-info text-white">
+                    <i class="fas fa-shopping-cart"></i>
+                    <b>
+                        Order Now Sold Out!!!
+                    </b>
+                </a>
+            }
+        </table>
+    </div>
+</div>
+
+<br />

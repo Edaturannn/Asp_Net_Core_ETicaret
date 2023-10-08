@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+@await Component.InvokeAsync("HomeNavbar")
+
+
+@await Component.InvokeAsync("HomeAbout")
+
+@await Component.InvokeAsync("HomeProject")
+
+
+@await Component.InvokeAsync("HomeGallery")
+
+
+@await Component.InvokeAsync("HomeUnderside")

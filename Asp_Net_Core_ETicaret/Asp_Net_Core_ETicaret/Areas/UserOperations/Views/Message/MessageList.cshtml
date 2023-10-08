@@ -1,0 +1,76 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.MessageTable>
+@{
+    ViewData["Title"] = "Message List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-4">
+        <a href="/User/User" class="btn btn-info text-white"><i class="fas fa-reply"></i></a>
+    </div>
+</div>
+<br />
+
+<div class="container">
+    <div class="card-body p-0">
+        <table class="table table-striped projects">
+            <thead>
+                <tr>
+                    <th style="width: 20%">
+                        User Admin Name
+                    </th>
+                    <th style="width: 30%">
+                        E-Mail
+                    </th>
+                    <th style="width: 20%">
+                        Title
+                    </th>
+                    <th style="width: 12%">
+                        Create Date
+                    </th>
+                    <th style="width: 12%">
+                        Message
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <b>@item.UserAdminName</b>
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.MessageTitle
+                        </td>
+                        <td>
+                            @(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))
+                        </td>
+                        <td>
+                            @item.MessageText
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <br />
+    @Html.PagedListPager((IPagedList)Model,page=>Url.Action("MessageList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+    {
+        LiElementClasses=new List<string>
+        {"page-link"}
+    })
+    <br />
+</div>
+<!-- /.card-body -->

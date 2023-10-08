@@ -1,0 +1,78 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.CargoTable>
+@{
+    ViewData["Title"] = "Cargo List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<br />
+
+
+<div class="container">
+    <div class="card-body p-0">
+        <a href="/AdminOperations/CargoExcel/CargoExcelCreate" class="btn btn-secondary text-white"><i class="fas fa-save"></i>  <b>Create Excel</b></a>
+        <br />
+        <br />
+        <table class="table table-striped projects">
+            <thead class="bg-dark">
+                <tr>
+                    <th style="width: 20%">
+                        Cargo Name
+                    </th>
+                    <th style="width: 30%">
+                        Create Date
+                    </th>
+                    <th style="width: 20%">
+                        Address
+                    </th>
+                    <th style="width: 12%">
+                        ID
+                    </th>
+                    <th style="width: 12%">
+                        
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <b>@item.CargoName</b>
+                        </td>
+                        <td>
+                            @(((DateTime)item.CargoCreateDate).ToString("dd-MMM-yyyy"))
+                        </td>
+                        <td>
+                            @item.Order.Address
+                        </td>
+                        <td>
+                            @item.Order.ProductID
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-danger text-white" href="/AdminOperations/Cargo/CargoDelete/@item.CargoID">
+                                <i class="fas fa-trash">
+                                </i>
+                                <b>Delete</b>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+        @Html.PagedListPager((IPagedList)Model,page=>Url.Action("CargoList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            LiElementClasses=new List<string>
+            {"page-link"}
+        })
+        <br />
+    </div>
+</div>
+<!-- /.card-body -->

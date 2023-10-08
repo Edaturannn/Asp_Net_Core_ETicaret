@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concrete.OrderTable
+@{
+    ViewData["Title"] = "Basket Add";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 offset-4">
+        @using (Html.BeginForm("BasketAdd", "Basket", FormMethod.Post))
+        {
+            <br />
+            @*<b>Name Surname</b>
+            @Html.TextBoxFor(x=>x.NameSurname,new{@class="form-control"})
+            <br />*@
+
+
+            <b>Phone Number</b>
+            @Html.TextBoxFor(x=>x.CustomerPhoneNumber,new{@class="form-control"})
+            <br />
+
+
+            <b>Address</b>
+            @Html.TextAreaFor(x=>x.Address,new{@class="form-control",@rows="4"})
+            <br />
+
+            @Html.HiddenFor(x=>x.OrderID,new{@class="form-control"})
+            //Guid ID Güncellenmeyecek
+
+
+            <div class="form-grop mb-3 d-grid">
+                <button class="btn btn-warning text-white d-block"><i class="fas fa-plus"></i>  <b>@ViewData["Title"]</b></button>
+                <a href="/User/User" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i>  <b>Cancel</b></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+

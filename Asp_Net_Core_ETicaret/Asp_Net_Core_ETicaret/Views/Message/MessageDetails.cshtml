@@ -1,0 +1,68 @@
+﻿@model EntityLayer.Concrete.MessageTable
+@{
+    ViewData["Title"] = "Message Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <a href="/Message/MessageList" class="btn btn-primary btn-block mb-3">Back to Inbox</a>
+        @await Component.InvokeAsync("Message")
+    </div>
+    <!-- /.col -->
+    <div class="col-md-9">
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Read Message</h3>
+                <div class="card-tools">
+                    <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Previous"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            @using (Html.BeginForm("MessageDetails", "Message", FormMethod.Post))
+            {
+                <div class="card-body p-0">
+                    <div class="mailbox-read-info">
+                        <h5>
+                            <b>
+                                Detail of This Message
+                            </b>
+                        </h5>
+                        <br>
+                        <h4>
+                            <b>From:</b> @Html.DisplayTextFor(x=>x.Email)
+                            <span class="mailbox-read-time float-right">@Html.DisplayTextFor(x=>x.CreateDate)</span>
+                        </h4>
+                    </div>
+                    <!-- /.mailbox-read-info -->
+                    <div class="mailbox-controls with-border text-center">
+                        <div class="btn-group">
+                            <a href="/Message/MessageList" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Reply"> <i class="fas fa-reply"></i></a>
+                        </div>
+                        <!-- /.btn-group -->
+                        <a href="#" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print"><i class="fas fa-print"></i></a>
+                    </div>
+                    <!-- /.mailbox-controls -->
+                    <div class="mailbox-read-message">
+                        <p><b>@Html.DisplayFor(x=>x.UserAdminName)</b></p>
+                        <p><b>@Html.DisplayFor(x=>x.MessageTitle)</b></p>
+                        <p>
+                            @Html.DisplayFor(x=>x.MessageText)
+                        </p>
+                    </div>
+                    <!-- /.mailbox-read-message -->
+                </div>
+            }
+            <!-- /.card-footer -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.col -->
+</div>

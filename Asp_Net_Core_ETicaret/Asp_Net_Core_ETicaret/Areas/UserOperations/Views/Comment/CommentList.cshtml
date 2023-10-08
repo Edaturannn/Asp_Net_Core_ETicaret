@@ -1,0 +1,48 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.CommentTable>
+@{
+    ViewData["Title"] = "Comment List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+<div class="container">
+    <br />
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Create Date</th>
+                <th>Comment Message</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@item.ID</th>
+                    <td>@item.CommentCreateDate</td>
+                    <td>@item.CommentMessage</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <br />
+    @Html.PagedListPager((IPagedList)Model,page=>Url.Action("CommentList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+    {
+    LiElementClasses=new List<string>
+    {"page-link"}
+    })
+</div>
+<br />
+<a href="/UserOperations/Gender/GenderList" class="btn btn-danger text-white"><b>Turn Back</b></a>
+
+
+
+
+

@@ -1,0 +1,16 @@
+﻿<!-- Small boxes (Stat box) -->
+<div style="background-color:white">
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-lg-6 col-6">
+            <img src="~/img/Weather.png" style="height:100px; width:100px;"/>
+        </div>
+        <h3>Ankara Weather</h3>
+        <h4>@ViewBag.V1 ' C</h4>
+    </div>
+    <br />
+
+
+    @await Component.InvokeAsync("AdminStatistics2")
+</div>

@@ -1,0 +1,58 @@
+﻿@model EntityLayer.Concrete.BestSellersTable
+@{
+    ViewData["Title"] = "Best Sellers Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 offset-4">
+        <form method="post" enctype="multipart/form-data">
+            <br />
+            <b>Name</b>
+            <input name="BestSellersName" type="text" class="form-control" />
+            <br />
+
+
+
+
+            <b>Title</b>
+            <input name="BestSellersTitle" type="text" class="form-control" />
+            <br />
+
+
+
+            <b>Description</b>
+            <input name="BestSellersDescription" type="text" class="form-control" />
+            <br />
+
+
+
+            <b>Images</b>
+            <input name="file" type="file" class="form-control" accept=".jpg" />
+            <br />
+
+
+            
+
+
+
+
+            <b>Price</b>
+            <input name="BestSellersPrice" type="text" class="form-control" />
+            <br />
+
+
+            <div class="form-grop mb-3 d-grid">
+                <button class="btn btn-info text-white d-block"><i class="fas fa-plus"></i>  <b>@ViewData["Title"]</b></button>
+                <a href="/AdminOperations/BestSellers/BestSellersList" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i>  <b>Cancel</b></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

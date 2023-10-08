@@ -1,0 +1,13 @@
+﻿@using EntityLayer.Concrete
+@model List<BestSellersTable>
+
+@foreach (var item in Model)
+{
+    <!-- Portfolio Item 2-->
+    <div class="col-md-6 col-lg-4 mb-5">
+        <img class="img-thumbnail-center rounded" src="~/BestSellersImg/@item.BestSellersImages" style="height:300px; width:200px;"  />
+    </div>
+}
+
+
+

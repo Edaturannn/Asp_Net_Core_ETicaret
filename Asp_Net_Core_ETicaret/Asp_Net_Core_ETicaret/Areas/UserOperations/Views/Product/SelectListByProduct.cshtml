@@ -1,0 +1,104 @@
+﻿@model IEnumerable<EntityLayer.Concrete.ProductTable>
+@{
+    ViewData["Title"] = "Product List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-5 mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+            <div style="border:none">
+                <br>
+                <a href="#" class="btn btn-dark read-m">
+                    <img src="~/ProductImg/@item.ProductImages" class="img-thumbnail-center rounded" style="height:400px; width:280px; object-fit:cover">
+                </a>
+                <div class="card-body">
+                    <br>
+                    <h4 class="card-title">@item.ProductTitle</h4>
+                    <h4 class="card-title">@item.ProductName      <b>@item.ProductPrice TL</b></h4>
+                   
+                    <p style="font-size:20px;">
+                        @item.ProductDescription
+                    </p>
+                    
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <a href="/UserOperations/Basket/BasketList/@item.ProductID" class="btn btn-dark read-m">
+                    <i class="fas fa-plus"></i>  
+                    <b>
+                        Add to Basket
+                    </b>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="/UserOperations/Comment/CommentList/@item.ProductID" class="btn btn-info text-white">
+                    <i class="fas fa-comment-alt"></i>
+                      <b>
+                        View Reviews of This Product Click Here
+                    </b>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="/UserOperations/Comment/CommentLeave/@item.ProductID" class="btn btn-danger text-white">
+                    <i class="fas fa-plus"></i>
+                    <b>
+                        Click Here To Leave A Comment On This Product
+                    </b>
+                </a>
+            </div>
+        </div>
+
+
+        @*.....................MODEL İŞLEMLERİ.....................*@
+
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->                                 
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">@item.ProductName</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="~/ProductImg/@item.ProductImages" style="height:450px; width:300px; object-fit:inherit" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <h2 style="color:black;"><b>@item.ProductPrice TL</b></h2>
+                                    <br>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*.....................MODEL İŞLEMLERİ.....................*@
+    </div>
+}
+<br />
+
+
+

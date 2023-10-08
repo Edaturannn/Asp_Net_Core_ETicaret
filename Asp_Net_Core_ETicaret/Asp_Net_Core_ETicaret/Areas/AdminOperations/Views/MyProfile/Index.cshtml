@@ -1,0 +1,68 @@
+﻿@model EntityLayer.Concrete.UserAdminTable
+@{
+    ViewData["Title"] = "My Profile Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 offset-4">
+        @using (Html.BeginForm("Index", "MyProfile", FormMethod.Post))
+        {
+            <br />
+            <b>Name Surname</b>
+            @Html.TextBoxFor(x=>x.NameSurname,new{@class="form-control"})
+            <br />
+
+            <b>Create Date</b>
+            @Html.TextBoxFor(x=>x.CreateDate,new{@class="form-control"})
+            <br />
+
+            <b>Gender</b>
+            @Html.TextBoxFor(x=>x.Gender,new{@class="form-control"})
+            <br />
+
+            <b>Profile Images</b>
+            @Html.TextBoxFor(x=>x.ProfileImages,new{@class="form-control"})
+            <br />
+
+
+            if (User.Identity.IsAuthenticated)
+            {
+                if (User.IsInRole("admin"))
+                {
+                    <b>Address</b>
+                    @Html.TextAreaFor(x=>x.Address,new{@class="form-control",@rows="5"})
+                    <br />
+                }
+            }
+
+
+            @Html.HiddenFor(x=>x.ID,new{@class="form-control"})
+            //Guid ID Güncellenmeyecek
+
+            @Html.HiddenFor(x=>x.Password,new{@class="form-control"})
+            //Password alanı Güncellenmeyecek
+
+            @Html.HiddenFor(x=>x.Locked,new{@class="form-control"})
+            //Locked alanı Güncellenmeyecek
+
+            @Html.HiddenFor(x=>x.Role,new{@class="form-control"})
+            //Role alanı Güncellenmeyecek
+
+            <div class="form-grop mb-3 d-grid">
+                <button class="btn btn-warning text-white d-block"><i class="fas fa-pencil-alt"></i>  <b>@ViewData["Title"]</b></button>
+                <a href="/Admin/Admin" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i>  <b>Cancel</b></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+

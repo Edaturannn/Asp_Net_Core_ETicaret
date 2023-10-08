@@ -1,0 +1,34 @@
+﻿@model IEnumerable<EntityLayer.Concrete.CategoryTable>
+@{
+	ViewData["Title"] = "Category List";
+	Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+	<div class="col-4 offset-4">
+		<h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<br />
+		<br />
+		@foreach (var item in Model)
+		{
+			<!-- Portfolio Item 2-->
+			<div class="col-md-6 col-lg-4 mb-5">
+				<br>
+				<br>
+				<a href="/UserOperations/Product/ProductListByCategoryID/@item.CategoryID" class="btn btn-dark read-m">
+					<img class="img-thumbnail-center rounded" src="~/CategoryImg/@item.CategoryImages" style="height:300px; width:250px; object-fit:cover;" />
+				</a>
+				<br>
+				<br>
+				<h4>@item.CategoryName</h4>
+			</div>
+		}
+	</div>
+</div>
+
+

@@ -1,0 +1,64 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.CommentTable>
+@{
+    ViewData["Title"] = "Comment List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"><b>@ViewData["Title"]</b></h1>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Timelime example  -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- The time line -->
+            @foreach (var item in Model)
+            {
+                <div class="timeline">
+                    <!-- timeline time label -->
+                    <div class="time-label">
+                        <span class="bg-success">Create Date</span>  <span>@(((DateTime)item.CommentCreateDate).ToString("dd-MMM-yyyy"))</span>
+                    </div>
+                    <!-- /.timeline-label -->
+                    <!-- timeline item -->
+                    <div>
+                        <i class="fas fa-comment bg-yellow"></i>
+                        <div class="timeline-item">
+                            <h3 class="timeline-header"><a href="#">Product Name</a> @item.Product.ProductName</h3>
+                            <h3 class="timeline-header"><a href="#">User Name</a> @item.ID</h3>
+                            <div class="timeline-body">
+                                @item.CommentMessage
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END timeline item -->
+                </div>
+                <a href="/AdminOperations/Comment/CommentEdit/@item.CommentID" class="btn btn-warning text-white"><i class="fas fa-pencil-alt"></i>  <b>Edit</b></a>
+                <a href="/AdminOperations/Comment/CommentDelete/@item.CommentID" class="btn btn-danger text-white"><i class="fas fa-trash"></i>  <b>Delete</b></a>
+                <br />
+                <br />
+                <br />
+            }
+            @Html.PagedListPager((IPagedList)Model,page=>Url.Action("CommentList",new{page}),new X.PagedList.Web.Common.PagedListRenderOptions
+            {
+                LiElementClasses=new List<string>
+                {"page-link"}
+            })
+        </div>
+        <!-- /.col -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
